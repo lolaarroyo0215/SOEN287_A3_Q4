@@ -1,0 +1,6 @@
+1:cat:Milo:Domestic Shorthair:12 weeks:male:yes:yes:yes:Loves to be pet:cat1.jpg
+2:dog:Stefano:Golden Retriever:8 weeks:male:yes:yes:yes:Very active, loves to run around:puppy2.jpg
+3:cat:Clara:Persian:10 weeks:female:yes:no:no:Quiet, not super cuddly:cat2.jpg
+4:cat:Bobbi:American Shorthair:14 weeks:female:no:yes:yes:Sweet girl who needs constant affection from owners:cat3.jpg
+5:dog:Bruno:Russel Terrier:1 year:male:yes:yes:yes:Happy boy with lots of energy:puppy3.jpg
+6:dog:Coco:Beagle:8 months:female:yes:yes:yes:High energy:puppy1.jpg

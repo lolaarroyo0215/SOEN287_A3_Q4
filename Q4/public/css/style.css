@@ -1,0 +1,800 @@
+/* Header Styling*/
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+/* General Styling*/
+body{
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    margin: 30px;
+    flex:1;
+    display:flex;
+    flex-direction:row;
+
+}
+#currentDate{
+    color: rgb(254, 250, 224);
+    position: absolute;
+    bottom: 5px;
+}
+
+/*Footer*/
+.footer{
+    font-family: "Playwrite PE", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;  
+    bottom: 0;
+    width: 100%;
+    height: 14%;
+    background-color: rgb(40, 54, 24);
+    color: rgb(254, 250, 224);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.footer p{
+    margin: 0;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+#terms, #privacy{
+    color: rgb(254, 250, 224);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 12px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#terms:hover, #privacy:hover{
+    text-decoration: underline;
+}
+/* Header Styling*/
+.namelogo{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(40, 54, 24);
+    color: rgb(254, 250, 224);
+}
+
+.banner {
+    margin: 0;
+    font-family: "Playwrite PE", cursive;
+    font-optical-sizing: auto;
+    font-weight:200;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+}
+.namelogo .logo img{
+    height: auto;  
+    max-height: 15vh;
+    padding-right: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: rgb(96, 108, 56);
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.navbar li {
+    flex: 1; /* Make each list item take up equal space */
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.navbar a {
+    color: rgb(254, 250, 224);
+    text-decoration: none;
+    padding: 15px;
+    display: flex; /* Make the link a flex container */
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure the link takes up the full width of the li */
+    height: 100%; /* Ensure the link takes up the full height of the li */
+    box-sizing: border-box; /* Include padding in the element's width and height */
+}
+
+.navbar li:hover a {
+    background-color: rgb(40, 54, 24);
+    color: rgb(254, 250, 224);
+}
+
+@media screen and (max-width: 700px){
+
+    .namelogo{
+        flex-direction: column;
+        height: fit-content;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .namelogo .banner{
+       font-size: small;
+       margin-bottom: 10px;
+
+    }
+
+    .namelogo .logo img{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .navbar ul {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+
+    .navbar a {
+        padding: 8px 10px;
+        font-size: 14px;
+        line-height: 1.5;
+
+    }
+
+    .navbar li {
+        flex: none;
+        height: auto;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0;
+        width: 100vw;
+        align-content: space-evenly;
+    }
+
+    .welcome{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 10px;
+        margin: 0;
+        align-content: center;
+    }
+}
+
+
+/* Welcome Section Styling*/
+.welcome{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgb(254, 250, 224);
+    border-style: dashed;
+    border-color: rgb(96, 108, 56);
+    border-width: 3px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 150px;
+    padding-left: 15px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+/*Browse Pets Styling*/
+.grid{
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 18rem;
+    padding-bottom: 18rem;
+    background-color: rgb(254, 250, 224);
+    height: fit-content;
+
+}
+
+.grid-item{
+    align-content: center;
+    justify-items: center;
+    height: 16rem;
+    width: 13rem;
+}
+.grid-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.grid-item figcaption{
+    color: rgb(40, 54, 24);
+    //padding: 0.3rem;
+    text-align: left;
+}
+.grid-item button{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: rgb(96, 108, 56);
+    color: rgb(254, 250, 224);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.grid-item button:hover{
+    background-color: rgb(59, 66, 35);
+}
+
+/*Responsive Grid Display*/
+@media (min-width: 600px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*Care Styling*/
+.care-instructions{
+    margin: 15px auto;
+    width: 100%;
+    text-align:left;
+    display: flex;
+    border-style: dashed;
+    border-width: thick;
+    border-color: rgb(188, 108, 37);
+    flex-direction: column;
+    background-color: rgb(221, 161, 94);
+    justify-content: center;
+    align-content: center;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    //font-weight: Medium 500;
+    font-style: normal;
+}
+
+.care-instructions p {
+    padding-left: 2%;
+    font-size: large;
+    font-weight: 500;
+}
+
+.care-instructions ul {
+    list-style-type: disc; /* Ensure bullets are shown for lists */
+    padding-left: 10%; /* Indent list items */
+}
+
+.care{
+    padding-left: 4%;
+}
+
+#training {
+    list-style-type: none; /* Ensure bullets are shown for lists */
+    padding-left: 10%; /* Indent list items */
+}
+
+#training a:link{
+    color: rgb(40, 54, 24);
+}
+
+#training a:visited{
+    color: rgb(254, 250, 224);
+}
+
+#grooming {
+    list-style-type: none; /* Ensure bullets are shown for lists */
+    padding-left: 10%; /* Indent list items */
+}
+
+#grooming a:link{
+    color: rgb(40, 54, 24);
+}
+
+#grooming a:visited{
+    color: rgb(254, 250, 224);
+}
+
+@media screen and (max-width: 700px){
+    .care-instructions{
+        margin: auto;
+        font-size: small;
+        width: 85vw;
+    }
+}
+
+
+/*Find Pet Styling*/
+.application{
+    align-self: center;
+    margin: 15px;
+    width: 85vw;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#application-form legend{
+    font-family: "Playwrite PE", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: large;
+}
+#error-message{
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.error{
+    background-color: red;
+    color: white;
+    border: 1px solid darkred;
+}
+.success{
+    background-color: green;
+    color: white;
+    border: 1px solid darkgreen;
+}
+
+#application-form label, input{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+/*Give Pet Styling*/
+.registration{
+    align-self: center;
+    margin: 15px;
+    width: 85vw;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#registration-form legend{
+    font-family: "Playwrite PE", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: large;
+}
+
+#give-text {
+   float: left;
+   outline-color: rgb(40, 54, 24);
+   outline-style: solid;
+   outline-width: 1.5px;
+   margin-bottom: 15px;
+   max-width:95%;
+}
+
+#give-text:focus {
+    outline-color: rgb(188, 108, 37);
+    background-color: rgb(221, 161, 94);
+    outline-style: solid;
+    outline-width: 3px;
+    color: rgb(40, 54, 24);
+ }
+
+#current-owner-info label, input{
+    margin-bottom: 1%;
+    margin-top:1%;
+    margin-right: 1%;
+    max-width: 95%;
+}
+
+/*Contact Styling*/
+.wrapper-contact-us{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    //font-weight: Medium 500;
+    font-style: normal;
+}
+.contact{
+    width:85vw;
+    margin: 1.5%;
+    background-color: rgb(254, 250, 224);
+    border-style: solid;
+    border-color: rgb(40, 54, 24);
+    border-width: 3px;
+    padding: 5%;
+    text-align: center;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.container h3{
+    font-family: "Playwrite PE", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: x-large;
+    margin-bottom: 5%;
+    color: rgb(40, 54, 24);
+}
+
+.contact-wrapper{
+    padding: 3%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10%;
+    background-color: rgb(254, 250, 224);
+
+}
+
+.contact-form{
+    text-align: center;
+}
+
+.contact-form h4{ 
+    text-align: center;
+    font-size: large;
+    margin-bottom: 5%;
+    color: rgb(40, 54, 24);
+}
+
+.form-element{
+    margin-bottom: 5%;
+}
+
+.form-element input, textarea{
+    width: 100%;
+    padding: 2%;
+    border-radius: 1%;
+    border: none;
+    background-color: white;
+    color: rgb(40, 54, 24);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    //font-weight: Medium 500;
+    font-style: normal;
+}
+
+.form-element input:focus, textarea:focus{
+    background-color: rgb(221, 161, 94);
+    outline-color: rgb(188, 108, 37);
+    outline-style: solid;
+    outline-width: 3px;
+    color: rgb(40, 54, 24);
+}
+.contact-form button{
+    display: inline-block;
+    outline-style: solid;
+    border-radius: 8px;
+    outline-width:3px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 3%;
+    background-color: rgb(96, 108, 56);
+    color: rgb(254, 250, 224);
+    cursor:pointer;
+}
+
+.contact-form button:hover{
+    background-color: rgb(66, 74, 39);
+    outline-color: rgb(40, 54, 24);
+}
+
+.contact-info{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 5%;
+    color: rgb(40, 54, 24);
+}
+
+.contact-info p{
+    font-size: medium;
+    text-align: center;
+}
+
+@media screen and(max-width: 700px) {
+    .contact{
+        margin: auto;
+        padding: 1%;
+        width: 85vw;
+        height: auto;
+    }
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+
+/*Account Registration Page*/
+.register-body{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #f4f4f4;
+    height: 80vh;
+    width: 100vw;
+}
+
+.register-container {
+    background-color: #fff;
+    margin: 30px auto 130px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(40, 54, 24);
+}
+
+
+.register-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(221, 161, 94);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-container button:hover {
+    background-color: rgb(188, 108, 37);
+}
+
+.register-container p {
+    text-align: center;
+    color: #333;
+}
+
+.register-container a {
+    color: rgb(40, 54, 24);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/*Account Login Page*/
+.login-body{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #f4f4f4;
+    height: 80vh;
+    width: 100vw;
+}
+
+.login-container {
+    background-color: #fff;
+    margin: 30px auto 130px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(40, 54, 24);
+}
+
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(221, 161, 94);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: rgb(188, 108, 37);
+}
+
+.login-container p {
+    text-align: center;
+    color: #333;
+}
+
+.login-container a {
+    color: rgb(40, 54, 24);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/*Logout Page*/
+.logout-body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+.logout-container{
+    margin: 80px auto 275px auto;
+    padding: 40px;
+    width: 60vw;
+    height: auto;
+    background-color: rgb(254, 250, 224);
+    border: rgb(188, 108, 37);
+    border-style: dashed;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.logout-container p{
+    margin: 15px auto;
+    padding: 25px;
+    font-size: 18px;
+    background-color: rgb(254, 250, 224);
+}
+.button-group{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.log-button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: white;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.log-button:hover{
+    background-color: rgb(221, 161, 94);
+}
+
+.popup{
+    margin-top: 100px;
+    width: 600px;
+    background-color: rgb(254, 250, 224);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 1000;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+.popup h2{
+    font-size: small;
+    font-weight: normal;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: rgb(96, 108, 56);
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: x-small;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgb(68, 76, 40);
+}
+.popup button:hover{
+    background-color: rgb(58, 66, 34);
+}
+
+@media screen and (min-width: 800px) {
+    .logout-container{
+        margin: 80px auto 240px auto;
+        padding: 40px 50px 40px 50px;
+        max-width: 500px;
+        height: auto;
+    }
+    .popup{
+        min-width: 600px;
+        margin-top: 60px;
+    }
+}
+
+
+
+
+
+  
+

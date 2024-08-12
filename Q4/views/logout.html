@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>logout</title>
+
+    <!--Import cursive font-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+PE:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+</head>
+<body class="logout-body">
+    <div class="logout-container">
+        <p>Do you wish to log out of you Paw Prints Account?</p>
+        <form id="logoutForm" action="/logout" method="post">
+            <div class="button-group">
+                <button class="log-button" onclick="showPopup(event)">Yes</button>
+                <button class="log-button" onclick="/home">No</button>
+            </div>
+        </form>
+
+        <div class="popup" id="popup">
+            <img src="/css/imgs/approve.png">
+            <h2>Logged out!</h2>
+            <p>Thank you for visiting our site. You have been successfully logged out!</p>
+            <button type="button" onclick="submitLogout()">OK</button>
+        </div>
+
+    </div>
+
+<script src="/js/main_script.js"></script>
+
+</body>
+</html>

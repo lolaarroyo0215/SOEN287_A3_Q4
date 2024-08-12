@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>findPet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!--Import cursive font-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+PE:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+</head>   
+<body>
+
+<div class="wrapper">
+    <div class="main">
+        <div class="application">
+        <form id="application-form" action="/findPet" method="post">
+            <fieldset><legend id="legend">Application Form</legend><br>
+            <label>What animal would you like to adopt?</label><br>
+                <input type="radio" class="pet" id="cat" name="pet" value="cat"><label for="cat">Cat</label>
+                <input type="radio" class="pet" id="dog" name="pet" value="dog"><label for="dog">Dog</label><br><br>
+    
+                <label>What breed of dog or cat would you prefer?</label><br>
+                <label>Dog Breeds:</label><br>
+                <input type="checkbox" id="lab" name="dbreed" value="labrador"><label for="lab">Labrador</label>
+                <input type="checkbox" id="golden" name="dbreed" value="golden retriever"><label for="golden">Golden Retriever</label>
+                <input type="checkbox" id="bull" name="dbreed" value="bulldog"><label for="bull">Bulldog</label>
+                <input type="checkbox" id="german" name="dbreed" value="german shepherd"><label for="german">German Shepherd</label>
+                <input type="checkbox" id="russel-terrier" name="dbreed" value="russel-terrier"><label for="russel-terrier">Russel Terrier</label>
+                <input type="checkbox" id="beagle" name="dbreed" value="beagle"><label for="beagle">Beagle</label>
+                <label>
+                    <input type="checkbox" class="none" name="dbreed">
+                </label><label for="none">no preference</label><br>
+
+                <label>Cat Breeds:</label><br>
+                <input type="checkbox" id="rag" name="cbreed" value="ragdoll"><label for="rag">Ragdoll</label>
+                <input type="checkbox" id="domestic" name="cbreed" value="domestic shorthair"><label for="domestic">Domestic Shorthair</label>
+                <input type="checkbox" id="bengal" name="cbreed" value="bengal"><label for="bengal">Bengal</label>
+                <input type="checkbox" id="british" name="cbreed" value="british shorthair"><label for="british">British Shorthair</label>
+                <input type="checkbox" id="scottish" name="cbreed" value="scottish fold"><label for="scottish">Scottish Fold</label>
+                <input type="checkbox" id="persian" name="cbreed" value="persian"><label for="persian">Persian</label>
+                <label>
+                    <input type="checkbox" class="none" name="cbreed">
+                </label><label for="none">no preference</label><br><br>
+
+            <label>Age preferences</label><br>
+            <input type="radio" id="0-3" name="age" value="3 months"><label for="0-3">0-3 months</label>
+            <input type="radio" id="3-6" name="age" value="6 months"><label for="3-6">3-6 months</label>
+            <input type="radio" id="6-9" name="age" value="9 months"><label for="6-9">6-9 months</label>
+            <input type="radio" id="10-12" name="age" value="12 months"><label for="10-12">10-12 months</label>
+            <input type="radio" id="1-3" name="age" value="3 years"><label for="1-3">1-3 years</label>
+            <input type="radio" id="plus" name="age" value="10 years"><label for="plus">over 3 years</label>
+            <input type="radio" id="none" name="age"><label for="none">no preference</label><br><br> 
+
+            <label for="gender">Gender preferences</label><br>
+            <select id="gender">
+                <option>female</option>
+                <option>male</option>
+                <option>no preference</option>
+
+            </select><br><br>
+
+            <label>Friendliness requirements:</label><br>
+            <input type="checkbox" id="gawc" name="friend" value="friendlyCats"><label for="gawc">gets along with other cats</label><br>
+            <input type="checkbox" id="gawd" name="friend" value="friendlyDogs"><label for="gawd">gets along with other dogs</label><br>
+            <input type="checkbox" id="kids" name="friend" value="friendlyKids"><label for="kids">gets along with small children</label><br><br>
+
+            <input id="submit-button" type="submit" value="Submit Adoption Request">
+            <input id="reset-button" type="reset" value="Reset">
+            </fieldset><br>
+
+            <div id="error-message"></div>
+          
+
+        </form>
+    </div>
+    </div>
+
+</div>
+</body>
+
+<script src="/js/findPetScript.js">
+
+</script>
+</html>

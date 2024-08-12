@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!--Import cursive font-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+PE:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        </style>
+</head>
+<body>
+<div class="main">
+    <div class="grid">
+        <% pets.forEach(pet => { %>
+        <figure class="grid-item">
+            <img src="/css/imgs/<%= pet.image %>" alt="<%= pet.name %>">
+            <figcaption>
+                <button class="interested" value="Interested">Interested</button>
+                <p>Name: <%= pet.name %></p>
+                <p>Breed: <%= pet.breed %></p>
+                <p>Gender: <%= pet.gender %></p>
+                <p>Age: <%= pet.age %></p>
+                <p>Gets along with: <%= pet.friendly %></p>
+                <p>Other Info: <%= pet.otherInfo %></p>
+            </figcaption>
+        </figure>
+        <% }) %>
+    </div>
+
+</div>
+
+  </body>
+  </html>

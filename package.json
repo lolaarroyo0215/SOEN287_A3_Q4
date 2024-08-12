@@ -1,0 +1,31 @@
+{
+  "name": "soen287_a3",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:server1": "nodemon Q1/server.js",
+    "start:server2": "nodemon Q2/server.js",
+    "start:server3": "nodemon Q3/server.js",
+    "start:server4": "nodemon Q4/server.js",
+    "start:q1-script": "nodemon Q1/Q1-script.js",
+    "start:numVisits": "nodemon Q2/numOfVisits.js",
+    "start:phone": "nodemon Q3/phoneChecker.js",
+    "start:q4-script": "nodemon Q4/Q4-script.js"
+  },
+  "keywords": [],
+  "author": "Lola Arroyo",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cookie": "^0.6.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "nodemon": "^3.1.4"
+  }
+}

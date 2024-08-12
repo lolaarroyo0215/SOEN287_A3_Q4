@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPrintsPetAdoption</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!--Import cursive font-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+PE:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+    <!--Import font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="namelogo">
+        <p id="currentDate"></p>
+        <div class="banner">
+            <h1>Paw Prints Pet Adoption & Care Center</h1>
+        </div>
+        <div class="logo" >
+            <a href="/home"><img src="/css/imgs/newLG.png" alt="logo"></a>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/browse">Browse Pets</a></li>
+            <li><a href="/findPet">Find Pet</a></li>
+            <li><a href="/givePet">Give Pet</a></li>
+            <li><a href="/logoutPage">Logout</a></li>
+            <% if (!user) { %>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+            <% } %>
+            <li><a href="/catCare">Cat Care</a></li>
+            <li><a href="/dogCare">Dog Care</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="currentDate"></div>
+</header>
+<main>
